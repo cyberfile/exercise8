@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 8: Responsive Web Design</title>
-
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
 
     <style>
-      /* Fix spacing issues */
       * {
         box-sizing: border-box;
       }
 
-      /* Base styles */
       body {
         font-family: "Pacifico", cursive;
         font-size: 30px;
         background-color: aqua;
+        margin: 0;
+        padding: 0;
       }
 
-      /* -------------------- */
-      /* MOBILE VIEW */
-      /* -------------------- */
+      /* Responsive Design Additions */
+
+      /* Mobile view */
       @media screen and (max-width: 599px) {
         body {
           background-color: yellow;
@@ -35,9 +34,7 @@
         }
       }
 
-      /* -------------------- */
-      /* DESKTOP VIEW */
-      /* -------------------- */
+      /* Desktop view */
       @media screen and (min-width: 600px) {
         body {
           background-color: aqua;
@@ -52,9 +49,7 @@
         }
       }
 
-      /* -------------------- */
-      /* GENERAL STYLING */
-      /* -------------------- */
+      /* misc. styling */
 
       ul a {
         color: magenta;
@@ -66,21 +61,6 @@
       ul,
       img {
         margin-left: 0;
-      }
-
-      /* Center main content like reference */
-      p,
-      img {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #headline,
-      h2,
-      ul {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
       }
 
       img {
@@ -103,7 +83,7 @@
         padding: 1em 1em 1em 20px;
       }
 
-      /* Headers */
+      /* headers */
 
       h1,
       li,
@@ -131,11 +111,9 @@
   </head>
 
   <body>
-
     <div id="headline">
       <h1>This is a One Page Website...</h1>
     </div>
-
     <p>...and we're going to design a desktop and a mobile view for it!</p>
 
     <h2>Table of Contents:</h2>
@@ -158,6 +136,5 @@
 
     <h2><a name="Four">Four</a></h2>
     <p>Morbi vestibulum massa vitae tortor vehicula rhoncus. Duis ac orci rhoncus, consectetur justo at, faucibus lacus. Nunc sit amet dolor sed neque scelerisque congue vel at nisi. Nam pellentesque nisi eu nisi cursus vulputate. Ut condimentum semper fermentum. Nulla facilisi. Quisque porttitor dui id erat fringilla, vitae euismod ipsum pulvinar. Ut lacinia sollicitudin augue ac accumsan. Etiam molestie tincidunt mi rutrum ornare.</p>
-
   </body>
 </html>
